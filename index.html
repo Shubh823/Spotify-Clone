@@ -12,9 +12,12 @@
 <body>
     <div class="container flex">
         <div class="left border bg_black br">
+            <div class="close">
+                <img class="invert" width="24px" src="close-md-svgrepo-com.svg" alt="">
+            </div>
             <div class="home bg_gray br p1 m1">
                 <div class="logo">
-                    <img class="invert" src="logo.svg" alt="">spotify
+                    <img class="invert" width="40px" padding-right="4px" src="logo.svg" alt="">  spotify
                 </div>
                 <ul>
                     <li><img src="home.svg" class="invert" alt="">Home</li>
@@ -25,7 +28,15 @@
                 <div class="icon">
                     <img class="invert" src="icon.svg" alt="">
                     <h3>Your Library</h3>
+                    
                 </div>
+                <div class="songlist">
+                    <ul>
+                     
+                    </ul>
+
+                </div>
+
                 <div class="footer">
                     <div> <a href="https://www.spotify.com/in-en/legal/" id=""><span>Legal</span></a></div>
                     <div><a href="https://www.spotify.com/in-en/safetyandprivacy/" id=""> <span>Safety &amp; Privacy
@@ -46,6 +57,11 @@
         <div class="right    bg_gray  br">
             <div class="header br">
                 <div class="nav">
+                    <div class="hamburgercontainer">
+                        <img class="invert hamburger" width="24px" src="hamburger-menu-svgrepo-com (1).svg" alt="">
+
+                    </div>
+                    
                     <img class="invert img1" src="left-chevron-svgrepo-com (1).svg" alt="">
                     <img class="invert img2" src="right-arrow-svgrepo-com.svg" alt="">
                 </div>
@@ -57,40 +73,34 @@
             <div class="spotify">
                 <h1>Spotify Playlist</h1>
                 <div class="cardcontainer">
-                    <div class="card">
-                        <div class="play">
-                            <img src="play-svgrepo-com.svg" alt="Image">
-                        </div>
-                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
-                            alt="">
-                        <h2>Aashiqui 2</h2>
-                        <p>Jeet Gannguli</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
-                            alt="">
-                        <h2>Aashiqui 2</h2>
-                        <p>Jeet Gannguli</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB"
-                            alt="">
-                        <h2>Aashiqui 2</h2>
-                        <p>Jeet Gannguli</p>
-                    </div>
+                   
                     <div class="playbar ">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="abovebar">
                         <div class="songinfo">
 
                         </div>
                         <div class="songbtn">
 
-                            <img class="img11" src="previous-circle-svgrepo-com.svg" alt="">
-                            <img  class="img12" src="play-circle-svgrepo-com (1).svg" alt="">
-                            <img class="img22" src="next-circle-svgrepo-com.svg" alt="">
+                            <img id="previous" class="img11 invert" src="previous-circle-svgrepo-com.svg" alt="">
+                            <img id="play" class="img12 invert" src="play-circle-svgrepo-com (1).svg" alt="">
+                            <img id="next" class="img22 invert" src="next-circle-svgrepo-com.svg" alt="">
                         </div>
-                        <div class="songtime">
+                        <div class="timevol">
 
+                            <div class="songtime">
+                 
+                            </div>
+                            <div class="volume">
+                                <img class="invert" width="24px" src="volume-max-svgrepo-com.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>
